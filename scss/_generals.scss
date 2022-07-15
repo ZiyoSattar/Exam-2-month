@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+body {
+  background-color: #EDF3F8;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  background-image: url("/img/bg.png");
+  background-size: 780px;
+  background-repeat: no-repeat;
+  background-position: calc(50% + 480px) -164px;
+}
+
+
+@media only screen and (max-width:1030px) {
+  body {
+    background-position: calc(50% + 0px) -411px;
+  }
+}

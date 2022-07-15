@@ -1,0 +1,177 @@
+.hero {
+  z-index: -111111111111111111111111111111;
+  padding-top: 74px;
+  padding-bottom: 75px;
+  overflow: hidden;
+}
+
+.hero__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__text-div {
+  padding-top: 80px;
+  max-width: 546px;
+  width: 100%;
+}
+
+.hero__heading {
+  margin: 0;
+  margin-bottom: 21px;
+  font-family: 'DM Serif Display';
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 72px;
+  letter-spacing: -0.553846px;
+  color: #36536B;
+}
+
+.hero__img {
+  margin-right: 70px;
+  border-radius: 30px;
+}
+
+.hero__form{ 
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.hero__label {
+  display: inline-block;
+  max-width: 445px;
+  width: 100%;
+
+}
+
+.hero__input {
+  @include inputs;
+}
+
+.hero__input::placeholder {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #36536B;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+input {
+  outline: none;
+}
+
+.hero__button {
+  @include buttons;
+}
+
+.hero__button:hover {
+  background-color: #DA6D97;
+}
+
+.hero__button:active {
+  opacity: 0.7;
+}
+
+.hero__form-text {
+  padding-left: 25px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #6C8294;
+}
+
+.hero__form-link {
+  font-weight: 700;
+  margin: 0;
+  font-size: 15px;
+  line-height: 18px;
+  color: #6C8294;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.hero__form-link:hover {
+  color: #36536B;
+}
+
+.hero__form-link:active {
+  opacity: 0.7;
+}
+
+.header__intro input {
+  display: none;
+}
+
+@media only screen and (max-width:1030px) {
+  .hero {
+    background-position: calc(50% - 0px) -546px;
+  }
+  .hero__inner {
+    flex-direction: column-reverse;
+  }
+
+  .hero__img {
+    margin: 0 auto;
+    max-width: 159px;
+    height: 300px;
+    border-radius: 15px;
+  }
+
+  .hero__heading {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .hero__text-div {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .hero__button {
+    right: 51px;
+  }
+}
+
+@media only screen and (max-width:640px) {
+  .hero__heading {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.246154px;
+  }
+
+  .hero__text-div {
+    max-width: 327px;
+    width: 100%;
+  }
+
+  .hero__label {
+    max-width: 327px;
+    width: 100%;
+  }
+
+  .hero__input {
+    width: 100%;
+    padding-right: 27px;
+    margin-bottom: 16px;
+  }
+
+  .hero__button {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .hero__form-text {
+    padding-left: 0;
+  }
+
+  .header__intro input {
+    display: block;
+  }
+}

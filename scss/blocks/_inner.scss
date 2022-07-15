@@ -1,0 +1,130 @@
+.inner {
+  background-image: url("/img/bg.png");
+  background-repeat: no-repeat;
+  background-size: 780px;
+  background-position: calc(50% - 580px) -350px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #1B262F;
+}
+
+.inner__intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inner__text-div {
+  max-width: 445px;
+  width: 100%;
+}
+
+.inner__heading {
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: 'DM Serif Display';
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: #FBFCFE;
+}
+
+.inner__text {
+  margin: 0;
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #FBFCFE;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+
+.inner__link {
+  padding: 16px 32px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.115385px;
+  color: #FBFCFE;
+  text-decoration: none;
+  border: 1px solid #FBFCFE;
+  border-radius: 24px;
+  transition: 0.5s ease;
+}
+
+.inner__link:hover {
+  color: #1B262F;
+  background: #FFFFFF;
+  border: 1px solid #FBFCFE;
+} 
+
+.inner__link:active {
+  opacity: 0.7;
+}
+
+.inner__list {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  justify-content: space-between;
+  max-width: 536px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.inner__item {
+  margin-top: 39px;
+}
+
+@media only screen and (max-width: 1030px) {
+  .inner {
+    background-position: calc(50% - 0px) -500px;
+  }
+  .inner__intro {
+    flex-direction: column-reverse;
+  }
+
+  .inner__text-div {
+    text-align: center;
+  }
+
+  .inner__list {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .inner__list {
+    max-width: 327px;
+    width: 100%;
+  }
+
+  .inner__heading {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.246154px;
+  }
+
+  .inner__text {
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px
+  }
+
+}
+
+
+@media only screen and (max-width: 350px) {
+  .inner__img {
+    width: 120px;
+    height: 120px;
+  }
+} 
